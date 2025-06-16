@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   
   const form = document.getElementById('registration-form');
-  const feedback = document.getElementById('form-feedback');
+  const feedbackDiv = document.getElementById('form-feedback');
 
  
   form.addEventListener('submit', function(event) {
@@ -30,14 +30,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
    
-    feedback.style.display = "block";
+    feedbackDiv.style.display = "block";
 
     if (isValid) {
-      feedback.textContent = "Registration successful!";
+      feedbackDiv.textContent = "Registration successful!";
       feedback.style.color = "#28a745";
     } else {
-      feedback.innerHTML = messages.join('<br>');
-      feedback.style.color = "#dc3545";
+      feedbackDiv.innerHTML = messages.join('<br>');
+      feedbackDiv.style.color = "#dc3545";
     }
   });
 });
