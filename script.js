@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Select form and feedback
+  
   const form = document.getElementById('registration-form');
   const feedback = document.getElementById('form-feedback');
 
-  // Listen when form is submitted
+ 
   form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Get values and trim them
+    
     const username = document.getElementById('username').value.trim();
     const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value.trim();
 
-    // Validation checks
+    
     let isValid = true;
     let messages = [];
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
       messages.push('Password must be at least 8 letters long');
     }
 
-    // Display messages
+   
     feedback.style.display = "block";
 
     if (isValid) {
