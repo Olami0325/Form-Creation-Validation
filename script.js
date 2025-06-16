@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function()  {
   // Select form and feedback
   const form = document.getElementById('registration-form');
   const feedback = document.getElementById('form-feedback');
 
   // Listen when form is submitted
-  form.addEventListener('submit', (event) => {
+  form.addEventListener('submit', function(event) {
     event.preventDefault();
 
     // Get values and trim them
